@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário </title> 
+    <link rel="stylesheet" href="materialize/css/materialize.css">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="shortcut icon" href="faviconn.ico" type="image/x-icon">
+
+</head>
+<nav>
+    <div class="nav-wrapper">
+        <a href="https://www.infornet.com.br/rede-de-prestadores/" target="_blank" rel="external" class="brand-logo">
+            Cadastro De Beneficiário</a>
+    </div>
+</nav>
+
+<body>
+    <div class="row">
+        <form class="col s12" onsubmit="InserirBeneficiario()">
+            <div class="row">
+                <div class="input-field col s2">
+                    <input placeholder="Beneficiário" id="nome" type="text" name="" class="validate">
+                    <label for="nome">Nome</label>
+                </div>
+                <div class="input-field col s2">
+                    <input  id="data" type="date" name="modelo" class="validate" required>
+                    <label for="modelo" >Data de nascimento</label>
+                </div>
+                <div class="input-field col s2">
+                    <input placeholder="RG/CPF" id="doc" type="text" class="validate">
+                    <label for="doc">Documento</label>
+                    
+                </div>         
+                <div class="input-field col s2">
+                    <input placeholder="Gênero" id="sexo" type="text" class="validate">
+                    <label for="sexo">Sexo</label>
+                    
+                </div>
+                <div class="input-field col s2">
+                    <input placeholder="Ex:Ativo" id="situacao" type="text" class="validate">
+                    <label for="situacao">Situação</label>   
+                </div>
+            </div>
+            <div class="row">
+                
+                <div class="input-field col s2">
+                    <input placeholder="Ex:Escola..." id="log" type="text" class="validate">
+                    <label for="log">Logradouro</label>
+                    
+                </div>
+                <div class="input-field col s1">
+                    <input placeholder="Nº" id="num" type="text" class="validate">
+                    <label for="num">Número</label>
+                    
+                </div>
+                <div class="input-field col s2">
+                    <input placeholder="Bairro" id="bairro" type="text" class="validate">
+                    <label for="bairro">Bairro</label>
+                    
+                </div>
+                <div class="input-field col s2">
+                    <input placeholder="Cidade" id="cidade" type="text" class="validate">
+                    <label for="cidade">Cidade</label>
+                    
+                </div>
+                <div class="input-field col s2">
+                    <input placeholder="Sigla" id="estado" type="text" class="validate">
+                    <label for="estado">Estado</label>
+                    
+                </div>
+            </div>
+                <div class="row">
+                  
+                <div class="input-field col s2">
+                    <input placeholder="e-mail" id="email" type="email" class="validate">
+                    <label for="email">E-mail</label>
+                    
+                 </div>
+                 <div class="input-field col s2">
+                    <input placeholder="Cel:(xx)x xxxxxxxx" id="tel" type="tel" class="validate">
+                    <label for="last_name">Telefone</label>
+                    
+                 </div>
+                        
+            </div>
+            
+           
+
+            </div>
+            <div class="input-field col s4 " style=" text-align: start;">
+                <button class="btn waves-effect waves-light" type="submit" name="action">Salvar
+                    <i class="material-icons right"></i>
+                </button>
+            </div>     
+            <div class="input-field col s4 " style=" text-align: start;">
+                <button class="btn waves-effect waves-light" type="reset" name="">Limpar
+                    <i class="material-icons right"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+
+    
+    <table class="highlight">
+        <thead>
+            <tr>
+                <th>Beneficiário</th>
+                <th>Data de Nascimento</th>
+                <th>Documento</th>
+                <th>Sexo</th>
+                <th>Situação Veículo</th>
+                <th>Logradouro</th>
+                <th>Número</th>
+                <th>Bairro</th>
+                <th>Cidade</th>
+                <th>Estado</th>
+                <th>E-mail</th>
+                <th>Telefone</th>
+                
+            </tr>
+        </thead>
+        <tbody id="mytable"></tbody>
+
+        
+
+    </table>
+    
+    <h1 id="totalizer"></h1>
+
+    
+
+
+
+    <script src="codigo.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="materialize/js/materialize.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+ 
+    
+
+</body>
+
+</html>
